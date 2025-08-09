@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="c"
+config/name="chukichuki"
+run/main_scene="uid://bteov26cvd4pv"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 

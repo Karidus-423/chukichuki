@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=3 uid="uid://bteov26cvd4pv"]
+
+[ext_resource type="Texture2D" uid="uid://b4hxngj03ep36" path="res://assets/RiverParallaxBackground1920x1080/IndividualsLayers/layer0.PNG" id="1_bkp1e"]
+[ext_resource type="Texture2D" uid="uid://c1ttthkdujav6" path="res://assets/RiverParallaxBackground1920x1080/IndividualsLayers/layer8.PNG" id="1_y0upk"]
+[ext_resource type="Texture2D" uid="uid://drhxd1y5owma7" path="res://assets/RiverParallaxBackground1920x1080/IndividualsLayers/layer7.PNG" id="2_1tmhi"]
+[ext_resource type="Texture2D" uid="uid://cx61t8u6qh1cc" path="res://assets/RiverParallaxBackground1920x1080/IndividualsLayers/layer2.PNG" id="2_jougr"]
+[ext_resource type="Texture2D" uid="uid://c8f0nng32xq0u" path="res://assets/RiverParallaxBackground1920x1080/IndividualsLayers/layer5.PNG" id="2_wax1t"]
+[ext_resource type="Texture2D" uid="uid://cas5qeh2tow1" path="res://assets/RiverParallaxBackground1920x1080/IndividualsLayers/layer3.PNG" id="4_cbsqf"]
+[ext_resource type="Texture2D" uid="uid://frcc1lywy11x" path="res://assets/RiverParallaxBackground1920x1080/IndividualsLayers/layer6.PNG" id="4_wisxt"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sky" type="Parallax2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Sky"]
+position = Vector2(522, 201)
+texture = ExtResource("1_y0upk")
+
+[node name="FarBush" type="Parallax2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="FarBush"]
+position = Vector2(637, 503)
+texture = ExtResource("2_1tmhi")
+
+[node name="MidleBush" type="Parallax2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="MidleBush"]
+position = Vector2(1215, 656)
+scale = Vector2(1.8329, 2.01827)
+texture = ExtResource("2_wax1t")
+
+[node name="River" type="Parallax2D" parent="."]
+scroll_offset = Vector2(2, -2)
+
+[node name="Sprite2D" type="Sprite2D" parent="River"]
+position = Vector2(596, 382)
+texture = ExtResource("2_jougr")
+
+[node name="RiverFloor" type="Parallax2D" parent="."]
+scroll_offset = Vector2(0, -8)
+
+[node name="Sprite2D" type="Sprite2D" parent="RiverFloor"]
+position = Vector2(538, 378)
+scale = Vector2(0.719361, 0.780525)
+texture = ExtResource("1_bkp1e")
+
+[node name="RiverBush" type="Parallax2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="RiverBush"]
+position = Vector2(585, 649)
+texture = ExtResource("4_wisxt")
+
+[node name="RiverEdge" type="Parallax2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="RiverEdge"]
+position = Vector2(592, 382)
+texture = ExtResource("4_cbsqf")

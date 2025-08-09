@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://dw1ym850arqdr"]
+
+[ext_resource type="Texture2D" uid="uid://ddn6ppqthnjnn" path="res://assets/chuki-shooter.png" id="1_q4aig"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jquju"]
+atlas = ExtResource("1_q4aig")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5r21y"]
+atlas = ExtResource("1_q4aig")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mc86n"]
+atlas = ExtResource("1_q4aig")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8e016"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jquju")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5r21y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mc86n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_8e016")
+frame_progress = 0.911883

@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://brdjj0o5erlio"]
+
+[ext_resource type="Texture2D" uid="uid://pbs5qaht4x0g" path="res://assets/chuki.png" id="1_rg6my"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_31j01"]
+radius = 21.095
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rg6my"]
+atlas = ExtResource("1_rg6my")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31j01"]
+atlas = ExtResource("1_rg6my")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yypd5"]
+atlas = ExtResource("1_rg6my")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g0ob2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rg6my")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31j01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yypd5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_31j01")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_g0ob2")
+animation = &"idle"
