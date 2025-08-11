@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjrib016ix55n"]
+
+[ext_resource type="PackedScene" uid="uid://bteov26cvd4pv" path="res://scenes/background.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://dw1ym850arqdr" path="res://scenes/shooter.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://b0fe0xeug3g5v" path="res://scenes/choku.tscn" id="3_h2yge"]
+
+[node name="main" type="Node2D"]
+
+[node name="background" parent="." instance=ExtResource("1_0xm2m")]
+
+[node name="choku" parent="." instance=ExtResource("3_h2yge")]
+position = Vector2(450, 308)
+scale = Vector2(6.86667, 6.5625)
+
+[node name="shooter_main" parent="." instance=ExtResource("2_h2yge")]
+position = Vector2(991, 566)
+scale = Vector2(5.06, 4.95813)
