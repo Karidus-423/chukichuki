@@ -15,3 +15,5 @@ scale = Vector2(6.86667, 6.5625)
 [node name="shooter_main" parent="." instance=ExtResource("2_h2yge")]
 position = Vector2(991, 566)
 scale = Vector2(5.06, 4.95813)
+
+[connection signal="child_entered_tree" from="shooter_main" to="shooter_main" method="_on_child_entered_tree"]
