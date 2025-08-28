@@ -14,5 +14,7 @@ func _input(event: InputEvent) -> void:
 
 
 func _on_child_entered_tree(node: Node) -> void:
-	var pos = node.position
-	print("From :", pos)
+	node.get_tree().get("chuki").position = Vector2(500,500)
+	# var pos = Vector2(0,0)
+	# if Input.is_action_pressed("shoot"):
+	# 	print("From :", pos)
